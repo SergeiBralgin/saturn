@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 1920px;
+  font-family: $font-primary;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: $color-primary-light;
+  background-color: $bg-color;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  object-fit: contain;
+  user-select: none;
+}

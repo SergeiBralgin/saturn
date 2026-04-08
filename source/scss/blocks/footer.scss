@@ -1,0 +1,21 @@
+.footer__wrapper {
+	position: relative;
+	background-color: $color-primary-light;
+	max-width: 1680px;
+	padding: 36px 48px 14px 359px;
+	display: flex;
+	gap: 123px;
+	margin: 228.45px auto 78px auto;
+	border-radius: 10px;
+}
+
+.footer__logo {
+	position: absolute;
+	top: 50%;
+	left: 62px;
+	transform: translateY(-50%);
+}
+
+.logo__img {
+	object-fit: cover;
+}

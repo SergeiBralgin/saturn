@@ -1,0 +1,7 @@
+.decor-img {
+	position: absolute;
+	box-shadow: 0 4px 8px 0 $color-primary-dark;
+	mix-blend-mode: color-dodge;
+	filter: blur(8px);
+	z-index: -1;
+}

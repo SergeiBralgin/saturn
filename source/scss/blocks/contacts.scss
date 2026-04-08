@@ -1,0 +1,36 @@
+.contacts {
+	display: flex;
+	gap: 179px;
+}
+
+.contacts__container {
+	display: flex;
+	flex-direction: column;
+}
+
+.contacts__mail {
+	display: block;
+	line-height: 21px;
+	letter-spacing: -2%;
+	color: rgba($color: $color-primary-dark, $alpha: 0.56);
+	text-decoration: none;
+	margin: 0;
+}
+
+.contacts__phone {
+	display: block;
+	font-weight: 700;
+	color: #141414;
+	text-decoration: none;
+	margin: 18px 0 0 0;
+}
+
+.contacts__user-agreement {
+	display: block;
+	position: relative;
+	font-weight: 300;
+	color: rgba($color: $color-primary-dark, $alpha: 0.56);
+	text-decoration-color: rgba($color: $color-primary-dark, $alpha: 0.56);
+	min-width: 247px;
+	margin: 24px 0 0 0;
+}

@@ -1,0 +1,34 @@
+// Global
+// ------------------------------------------
+
+@import "./global/font.scss";
+@import "./global/visually-hidden.scss";
+@import "./global/variables.scss";
+@import "./global/mixins.scss";
+@import "./global/common.scss";
+
+// Blocks
+// ------------------------------------------
+
+@import "./blocks/title.scss";
+@import "./blocks/link.scss";
+@import "./blocks/decor-img.scss";
+@import "./blocks/decor-circle.scss";
+@import "./blocks/header.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/industries.scss";
+@import "./blocks/solutions.scss";
+@import "./blocks/solutions-card.scss";
+@import "./blocks/project-discuss.scss";
+@import "./blocks/feedback.scss";
+@import "./blocks/form.scss";
+@import "./blocks/user-data.scss";
+@import "./blocks/text-user.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/address.scss";
+@import "./blocks/partners.scss";
+@import "./blocks/about.scss";
+@import "./blocks/directions-decor.scss";
+@import "./blocks/about-solution.scss";
