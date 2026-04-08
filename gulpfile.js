@@ -17,7 +17,7 @@ import svgSprite from 'gulp-svg-sprite';
 import * as esbuild from 'esbuild';
 import {deleteAsync} from 'del';
 import imageminWebp from 'imagemin-webp';
-// import imageResize from 'gulp-image-resize'
+import ghPages from 'gulp-gh-pages'
 
 const path = {
     source: {
@@ -228,8 +228,14 @@ const watch = () => {
 
 const clean = () => deleteAsync(path.build.folder);
 
+
+const deploy = () => {
+    return gulp.src('./dist/**/*') // Берем всё из папки dist
+        .pipe(ghPages());
+}
+
 const dev = gulp.series(scss, jsDev, gulp.parallel(watch, start));
 const build = gulp.series(clean, scss, minifyHTML, minifyCss, jsBuild, optimizingRasterImages, sprite, renamePathHtml, renamePathCss, fontsTransfer);
 
 export default dev;
-export {build, startBuild, createWebpImages}
+export {build, startBuild, createWebpImages, deploy}
